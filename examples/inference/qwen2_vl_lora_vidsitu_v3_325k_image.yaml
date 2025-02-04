@@ -1,0 +1,2 @@
+model_name_or_path: /shared/nas/data/m1/wangz3/CoPR_project/LLaMA-Factory/models/qwen2_vl_lora_vidsitu_v3_325k_image_sft
+template: qwen2_vl

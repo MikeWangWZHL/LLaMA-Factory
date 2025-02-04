@@ -1,0 +1,4 @@
+{
+    "user": "Describe what are the entities in the frames and their actions. Note that the video can contain multiple salient entities. And each entity can have more than one action. Be as detailed as possible. Think step by step and provide your final answer in a JSON format like this:\n------\n[\n    {\n        \"subject\": \"person on the left\", # who did the action\n        \"action\": \"fighting\", # action name\n        \"object\": \"person on the right\", # who did the action to\"\n    }\n    ...\n]\n",
+    "assistant": "[\n    {\n        \"subject\": \"man in wife beater\",\n        \"action\": \"fight\",\n        \"object\": \"man in tank top with SCC on the back\"\n    },\n    {\n        \"subject\": \"the two inmates\",\n        \"action\": \"continue\",\n        \"object\": \"to fight each other\"\n    }\n]"
+}

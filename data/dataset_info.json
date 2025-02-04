@@ -52,6 +52,48 @@
       "assistant_tag": "assistant"
     }
   },
+  "vidsitu_v3_40k_video": {
+    "file_name": "vidsitu_v3_40k_video.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "vidsitu_v3_40k_image": {
+    "file_name": "vidsitu_v3_40k_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "vidsitu_v3_325k_image": {
+    "file_name": "vidsitu_v3_325k_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "alpaca_en": {
     "hf_hub_url": "llamafactory/alpaca_en",
     "ms_hub_url": "llamafactory/alpaca_en",

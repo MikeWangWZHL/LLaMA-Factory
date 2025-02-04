@@ -168,3 +168,6 @@ config/
 saves/
 output/
 wandb/
+models/
+data/
+example_inputs/
