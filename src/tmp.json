@@ -1,4 +1,152 @@
-{
-    "user": "Describe what are the entities in the frames and their actions. Note that the video can contain multiple salient entities. And each entity can have more than one action. Be as detailed as possible. Think step by step and provide your final answer in a JSON format like this:\n------\n[\n    {\n        \"subject\": \"person on the left\", # who did the action\n        \"action\": \"fighting\", # action name\n        \"object\": \"person on the right\", # who did the action to\"\n    }\n    ...\n]\n",
-    "assistant": "[\n    {\n        \"subject\": \"man in wife beater\",\n        \"action\": \"fight\",\n        \"object\": \"man in tank top with SCC on the back\"\n    },\n    {\n        \"subject\": \"the two inmates\",\n        \"action\": \"continue\",\n        \"object\": \"to fight each other\"\n    }\n]"
-}
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What kind of company put up the white sign?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the white sign in the current image to understand its context.<percep> After identifying the location of the white sign, I can then look for the company name associated with it in the image.<percep> Upon examining the specified region for the company name, I can determine that the name displayed is 'Mattress'.</think><answer>The company that put up the white sign is 'Mattress'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/coco-text_COCO_train2014_000000232546.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What kind of company put up the white sign?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the white sign in the current image.<percep> After identifying the white sign, I will proceed to find the company name associated with it.<percep> Upon recognizing the company name on the sign, I can determine that it is 'Mattress'.</think><answer>The kind of company that put up the white sign is a mattress company.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/coco-text_COCO_train2014_000000232546.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What is in white font on the lamp post's sign?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to identify the location of the sign on the lamp post within the image for further analysis.<percep> After locating the sign, I can now extract and recognize the text displayed in white font on the lamp post's sign.</think><answer>The text in white font on the sign of the lamp post is 'Historic 66'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/coco-text_COCO_train2014_000000232546.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What are the first 4 characters of the license plate?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to identify the license plate in the current image.<percep> Upon analyzing the characters in the image of the license plate, I can determine that the first four characters are '2445'.</think><answer>The first four characters of the license plate are '2445'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/IIIT_text_4096.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What are the first 4 characters of the license plate?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to find the license plate in the current image.<percep> Upon analyzing the characters on the license plate, I can determine that the first four characters are '2445'.</think><answer>The first four characters of the license plate are '2445'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/IIIT_text_4096.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What is the first letter of the word in the top left corner?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the word that is positioned in the top left corner of the image.<percep> Upon extracting the text from that region, I find that the first letter of the word is 'C'.</think><answer>The first letter of the word in the top left corner is 'C'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/imageNet_n03920288_3184.JPEG"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What is the fourth letter of the word in the top left corner?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to identify the top left corner of the image to find the word located there.<percep> Upon recognizing the text from the image, I find that the fourth letter of the word in the top left corner is 'B'.</think><answer>The fourth letter of the word in the top left corner is 'B'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/imageNet_n03920288_3184.JPEG"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What does the octagon street sign say?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the octagon street sign in the image to identify what it says.<percep> After locating the sign, I can recognize that the octagon street sign displays the word 'STOP'.</think><answer>The octagon street sign says 'STOP'.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/VisualGenome_1_2337636.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>What kind of tea is in the box?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the tea box in the current image to find out more about it.<percep> Upon examining the label on the tea box, I can determine that the tea inside is Jasmine Green Tea.</think><answer>The kind of tea in the box is Jasmine Green Tea.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/vizwiz_VizWiz_train_000000007178.jpg"
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "<image>How many bags are in the box?"
+            },
+            {
+                "role": "assistant",
+                "content": "<think>I need to locate the box within the image to determine its contents.<percep> Upon examining the box, I can ascertain that it contains a total of 100 teabags.</think><answer>The box contains a total of 100 teabags.</answer>"
+            }
+        ],
+        "images": [
+            "/shared/nas2/xuehangg/vqa/data/cogcom/images/images/ST-VQA/vizwiz_VizWiz_train_000000007178.jpg"
+        ]
+    }
+]
