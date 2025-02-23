@@ -1,4 +1,4 @@
-# Copyright 2024 the LlamaFactory team.
+# Copyright 2025 the LlamaFactory team.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -64,16 +64,19 @@ def create_chat_box(
 
                     with gr.Column() as mm_box:
                         with gr.Tab("Image"):
-                            image = gr.Image(sources=["upload"], type="pil")
+                            image = gr.Image(type="pil")
 
                         with gr.Tab("Video"):
-                            video = gr.Video(sources=["upload"])
+                            video = gr.Video()
+
+                        with gr.Tab("Audio"):
+                            audio = gr.Audio(type="filepath")
 
                 query = gr.Textbox(show_label=False, lines=8)
                 submit_btn = gr.Button(variant="primary")
 
             with gr.Column(scale=1):
-                max_new_tokens = gr.Slider(minimum=8, maximum=4096, value=512, step=1)
+                max_new_tokens = gr.Slider(minimum=8, maximum=8192, value=1024, step=1)
                 top_p = gr.Slider(minimum=0.01, maximum=1.0, value=0.7, step=0.01)
                 temperature = gr.Slider(minimum=0.01, maximum=1.5, value=0.95, step=0.01)
                 clear_btn = gr.Button()
@@ -86,7 +89,7 @@ def create_chat_box(
         [chatbot, messages, query],
     ).then(
         engine.chatter.stream,
-        [chatbot, messages, lang, system, tools, image, video, max_new_tokens, top_p, temperature],
+        [chatbot, messages, lang, system, tools, image, video, audio, max_new_tokens, top_p, temperature],
         [chatbot, messages],
     )
     clear_btn.click(lambda: ([], []), outputs=[chatbot, messages])
@@ -102,6 +105,7 @@ def create_chat_box(
             mm_box=mm_box,
             image=image,
             video=video,
+            audio=audio,
             query=query,
             submit_btn=submit_btn,
             max_new_tokens=max_new_tokens,
